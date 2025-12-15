@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Спорт — бул достук</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-40px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes slideUp {
+      from {transform: translateY(40px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    header {
+      background: #0d6efd;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      animation: slideDown 1s ease-out;
+    }
+
+    nav {
+      background: #084298;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe082;
+    }
+
+    .hero {
+      background: url("https://images.unsplash.com/photo-1517649763962-0c623066013b") center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+      font-size: 36px;
+      font-weight: bold;
+      animation: slideUp 1s ease-out;
+    }
+
+    section {
+      background: #fff;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 15px;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+      gap: 15px;
+    }
+
+    .value {
+      background: #e9f2ff;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      text-align: center;
+    }
+
+    .benefit-item {
+      background: #e9f2ff;
+      padding: 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .benefit-item:hover {
+      transform: scale(1.05);
+      background: #d0e2ff;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 12px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ===== ВИДЕО СТИЛЬ ===== */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .video-box {
+      background: #e9f2ff;
+      padding: 15px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .video-box:hover {
+      transform: scale(1.03);
+    }
+
+    .video-box p a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #084298;
+    }
+
+    .video-box p a:hover {
+      text-decoration: underline;
+    }
+
+    iframe {
+      border-radius: 12px;
+    }
+
+    footer {
+      background: #0d6efd;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      animation: slideUp 1s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+<header>🏆 Спорт — бул достук</header>
+
+<nav>
+  <a href="#about">Биз жөнүндө</a>
+  <a href="#values">Баалуулуктар</a>
+  <a href="#gallery">Галерея</a>
+  <a href="#benefits">Пайдасы</a>
+  <a href="#video">Видео</a>
+  <a href="#contacts">Байланыш</a>
+</nav>
+
+<div class="hero">
+  Спорт адамдарды бириктирет 💪
+</div>
+
+<section id="about">
+  <h2>Спорт жана достук</h2>
+  <p>
+    Спорт — бул адамдарды жакындаткан, ден соолукту чыңдаган жана
+    достукту бекемдеген маанилүү иш.
+  </p>
+</section>
+
+<section id="values">
+  <h2>Баалуулуктар</h2>
+  <div class="values">
+    <div class="value">🤝 Командалык иш</div>
+    <div class="value">❤️ Колдоо</div>
+    <div class="value">⭐ Сыйлоо</div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Галерея</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d">
+    <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf">
+    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b">
+  </div>
+</section>
+
+<section id="benefits">
+  <h2>Спорттун пайдасы</h2>
+  <div class="benefits">
+    <div class="benefit-item">💪 Ден соолукту чыңдайт</div>
+    <div class="benefit-item">🧠 Акылды жана көңүлдү жакшыртат</div>
+    <div class="benefit-item">😊 Көңүл-күйдү көтөрөт</div>
+    <div class="benefit-item">🤝 Достукту бекемдейт</div>
+  </div>
+</section>
+
+<section id="video">
+  <h2>Кыргызча спорт видеолору</h2>
+
+  <div class="video-grid">
+
+    <div class="video-box">
+      <iframe width="100%" height="250"
+        src="https://www.youtube.com/embed/WkiiR8v0XQo"
+        allowfullscreen>
+      </iframe>
+      <p style="text-align:center; margin-top:10px;">
+        <a href="https://youtu.be/WkiiR8v0XQo" target="_blank">
+          Биринчи видеону көрүү
+        </a>
+      </p>
+    </div>
+
+    <div class="video-box">
+      <iframe width="100%" height="250"
+        src="https://www.youtube.com/embed/TSJWWZjkhXM"
+        allowfullscreen>
+      </iframe>
+      <p style="text-align:center; margin-top:10px;">
+        <a href="https://youtu.be/TSJWWZjkhXM" target="_blank">
+          Экинчи видеону көрүү
+        </a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contacts">
+  <h2>Байланыш</h2>
+  <p>📧 Email: lirasatvaldyeva3@gmail.com</p>
+  <p>📞 Телефон: +996 555 123 456</p>
+</section>
+
+<footer>
+  © 2025 Спорт — бул достук
+</footer>
+
+</body>
+</html>
